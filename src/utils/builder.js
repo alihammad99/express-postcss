@@ -19,7 +19,7 @@ export const buildCSS = async (req, res) => {
       cssnano(), // Add cssnano for minification
     ]).process(css, { from: cssFilePath, to: "output.css" });
 
-    await fs.writeFile("output.css", result.css); // Uncomment to save to disk
+    // await fs.writeFile("output.css", result.css); // Uncomment to save to disk
 
     console.log("✨ CSS file built successfully");
     res.set("Content-Type", "text/css"); // Set the content type to CSS

@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["sample/**/*.{html,js}", "!node_modules/**"],
+  content: ["sample/**/*.{html,js}", "!node_modules/**"],
 
   daisyui: {
     themes: [
