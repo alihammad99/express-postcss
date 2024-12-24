@@ -13,3 +13,10 @@ Using Tailwind CSS without a framework can be challenging, as it requires a buil
 - **DaisyUI Integration**: Utilize DaisyUI for pre-designed components that enhance the Tailwind experience.
 - **UnoCSS Integration**: Use UnoCSS for on-demand utility generation.
 - **Express Server**: A lightweight Express server to handle requests and serve static files.
+
+## Starting Steps
+
+1. Clone the git repo.
+2. Run `npm install` or `bun install`.
+3. Run `npm start` or `bun start`.
+4. Open [http://localhost:1212/build-css](http://localhost:1212/build-css) to build requested files.

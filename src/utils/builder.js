@@ -17,9 +17,9 @@ export const buildCSS = async (req, res) => {
       tailwindcss({ config: tailwindConfigPath }), // Specify the Tailwind config
     ]).process(css, { from: cssFilePath, to: "output.css" });
 
-    // Save the output CSS
-    // await fs.writeFile("output.css", result.css);
-    console.log("Done ✔︎");
+    // await fs.writeFile("output.css", result.css); // Uncomment to save to disk
+
+    console.log("✨ CSS file built successfully");
     res.set("Content-Type", "text/css"); // Set the content type to CSS
     res.status(200).send(result.css);
   } catch (error) {
